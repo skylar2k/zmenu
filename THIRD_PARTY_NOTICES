@@ -1,0 +1,110 @@
+THIRD-PARTY NOTICES
+==============================================================================
+
+zmenu is licensed under the GNU General Public License, version 3 (see the file
+LICENSE). It contains code derived from, and is built with, the software listed
+below, which is licensed under the permissive terms reproduced in full after
+each entry. Those licenses are compatible with the GPL; their copyright and
+permission notices must stay with the code they cover.
+
+
+1. dmenu  -  https://tools.suckless.org/dmenu/
+==============================================================================
+
+What is derived from it:
+
+  * The matching rules in src/match.zig (which items match what you type, and
+    in what order), ported from dmenu's match() function.
+  * zmenu's behaviour, options and key handling, modelled on dmenu.
+
+MIT/X Consortium License
+
+© 2006-2019 Anselm R Garbe <anselm@garbe.ca>
+© 2006-2008 Sander van Dijk <a.h.vandijk@gmail.com>
+© 2006-2007 Michał Janeczek <janeczek@gmail.com>
+© 2007 Kris Maglione <jg@suckless.org>
+© 2009 Gottox <gottox@s01.de>
+© 2009 Markus Schnalke <meillo@marmaro.de>
+© 2009 Evan Gates <evan.gates@gmail.com>
+© 2010-2012 Connor Lane Smith <cls@lubutu.com>
+© 2014-2022 Hiltjo Posthuma <hiltjo@codemadness.org>
+© 2015-2019 Quentin Rameau <quinq@fifth.space>
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the "Software"),
+to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+
+2. The Zig standard library  -  https://ziglang.org/
+==============================================================================
+
+Parts of the Zig standard library are compiled into the zmenu
+program (collections, formatting, and so on).
+
+The MIT License (Expat)
+
+Copyright (c) Zig contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+3. zig-objc  -  https://github.com/mitchellh/zig-objc  (MIT, (c) 2023 Mitchell Hashimoto)
+==============================================================================
+
+zmenu is built with this library, which sends the Objective-C messages
+(src/cocoa.zig and the AppKit code in src/ui.zig use it). It is fetched when zmenu is built, as
+build.zig.zon says, and its code is part of the resulting programs.
+
+zig-objc's license:
+
+MIT License
+
+Copyright (c) 2023 Mitchell Hashimoto
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

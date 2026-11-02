@@ -1,0 +1,20 @@
+.{
+    .name = .zmenu,
+    .version = "0.0.1",
+    .dependencies = .{
+        .zig_objc = .{
+            .url = "git+https://github.com/mitchellh/zig-objc#bee663fdfaa0c554235dc36b1dce88d136a190ec",
+            .hash = "zig_objc-0.0.0-Ir_Sp_4tAQDXtPi51nW_jD9LOEzBvU9lofwO9Pzi6IB4",
+        },
+    },
+    .minimum_zig_version = "0.17.0",
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "LICENSE",
+        "README.md",
+        "THIRD_PARTY_NOTICES",
+    },
+    .fingerprint = 0x2901eafcd005576b,
+}
